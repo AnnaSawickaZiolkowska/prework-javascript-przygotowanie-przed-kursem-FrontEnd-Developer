@@ -1,24 +1,9 @@
-/* 
-var myAge = 25;
+var age = 5;
 
-if (myAge >= 18 && myAge <=30){     //&& and
+while (age < 10){
 
-    document.write("You can come, you cool dude");
-
-} else{
-
-    document.write("you aint coming");
-} */
-
-var myAge = 35;
-
-if (myAge < 18 || myAge > 30 || myAge === 25){     // || or tylko jedno stwierdzenie musi być prawdziwe
-
-    document.write("you aint coming");
-
-
-} else{
-
-    document.write("You can come, you cool dude");
-
+console.log("Your age is less than 10");
+age++;
 }
+
+document.write("You are now over 10");
