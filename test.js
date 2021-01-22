@@ -1,107 +1,29 @@
 /*
-function getAverage (a,b, c, d, e, f){
+var myString = "I am a string";
 
-    var average = (a + b + c + d + e + f) /2;
-    console.log(average);
-    return average;
+var mySrting1 = 'I am a "fun" string';
+
+var myString2 = 'I\'m a "fun" string';
+
+console.log(myString)
+
+console.log(myString.length);
+console.log(myString.toUpperCase());
+
+console.log(myString.indexOf("fun"));
+
+if (myString.indexOf("ninja") === -1){
+
+    console.log("the world ninja is not in the string");
+}else {
+
+    console.log("the world ninja starts at position " + myString.indexOf("ninja"));
 }
-
-var myResult = getAverage(7,8,9,10,11,12);
-console.log("the averege is " + myResult);
 
 */
 
+var string1 = "abc";
+var string2 = "ABC";
 
-/*
-function getAverage (a,b){
-
-    var average = (a + b) /2;
-    console.log(average);
-    return average;
-
-}
-
-var myResult = getAverage(7,11);  //global variable
-console.log("the averege is " + myResult);
-
-*/
-
-
-/* 
-// 1 - z average local
-
-function getAverage (a,b){
-
-    var average = (a + b) /2;
-    console.log(average);
-    return average;
-
-}
-
-var myResult = getAverage(7,11);  //global variable
-
-function logResult(){
-    console.log("the averege is " + myResult + " inside the function");
-
-}
-
-logResult();
-*/
-// z average global
-/*
-var average = 0
-
-function getAverage (a,b){
-
-    average = (a + b) /2;
-    console.log(average);
-    return average;
-
-}
-
-var myResult = getAverage(7,11);  //global variable
-
-function logResult(){
-    console.log("the averege is " + myResult + " inside the function");
-
-}
-
-logResult();
-
-*/
-
-
-/* NUMBERS
-
-var a = "5";
-var b = 5;
-console.log(a + b);
-console.log(typeof (a + b) );
-
-console.log(Math.round(7.8));
-
-*/
-
-/*
-var a = "apple";
-var b = 5;
-
-if (isNaN(a)){
-
-    console.log("that int even a number, thiclke");
-} else {
-
-    console.log("Meaning of life is " + (a * b));
-}
-*/
-var a = "apple";
-var b = 5;
-
-//double nagative
-if (isNaN(a)){
-
-    console.log("that int even a number, thiclke");
-} else {
-
-    console.log("Meaning of life is " + (a * b));
-}
+console.log(string1 === string2);   //FALSE
+console.log(string1.toLowerCase() === string2.toLowerCase());   //TRUE
